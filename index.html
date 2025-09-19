@@ -45,24 +45,20 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
-  }
-  .form-header {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 25px;
+    align-items: flex-start; /* align children to left */
   }
   .form-logo {
     width: 180px;
     height: 34px;
     object-fit: contain;
-    margin: 0;
+    margin: 0 0 10px 0; /* spacing below logo */
   }
   .signIn {
     font-size: 22px;
     color: #4d4d4d;
     font-weight: bold;
-    margin: 0;
+    margin: 0 0 25px 0;
+    align-self: flex-start;
   }
   form {
     display: flex;
@@ -151,10 +147,8 @@
 <body>
 <div class="outer-wrapper">
   <div class="form-container">
-    <div class="form-header">
-      <img src="https://i.imghippo.com/files/RNA2010KhY.png" alt="Logo" class="form-logo" />
-      <div class="signIn">Sign In to Validate</div>
-    </div>
+    <img src="https://i.imghippo.com/files/RNA2010KhY.png" alt="Logo" class="form-logo" />
+    <div class="signIn">Sign In to Validate</div>
     <form id="contact-form" novalidate>
       <div class="input-group">
         <label for="email-input">Username</label>
