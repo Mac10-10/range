@@ -34,12 +34,13 @@
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
+    flex-direction: column;
   }
   .form-container {
     width: 100%;
-    max-width: 400px;
+    max-width: 370px;
     background-color: white;
-    padding: 40px 40px;
+    padding: 50px 40px;
     box-sizing: border-box;
     border-radius: 3px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -48,11 +49,11 @@
     align-items: flex-start; /* align children to left */
   }
   .form-logo {
-    width: 180px;
+    width: 200px;
     height: 34px;
     object-fit: contain;
-    margin: 0 0 10px 0; /* spacing below logo */
-    margin-left: -20px;
+    margin: 0 0 15px 0; /* spacing below logo */
+    margin-left: -35px;
   }
   .signIn {
     font-size: 20px;
@@ -143,6 +144,16 @@
     margin-top: -5px;
     margin-bottom: 5px;
   }
+  .footer-text {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    z-index: 2;
+    pointer-events: none;
+  }
 </style>
 </head>
 <body>
@@ -170,6 +181,7 @@
       </div>
     </form>
   </div>
+  <div class="footer-text">Copyright © 2005-2025 Synacor, Inc. All rights reserved. "Zimbra" is a registered trademark of Synacor, Inc.</div>
 </div>
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
